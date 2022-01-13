@@ -25,7 +25,14 @@ export default {
         this.gerentes = resposta.data
       })
       .catch(erro => console.log(erro))
-  }
+  },
+  //Não funciona pois o componente Gerente não está sendo renderizado
+  // beforeRouteEnter(to, from, next) {
+  //   if(!this.$store.state.token) {
+  //     next('/login')
+  //   }
+  //   next()
+  // }
 }
 </script>
 
